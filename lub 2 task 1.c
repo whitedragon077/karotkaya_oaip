@@ -3,7 +3,8 @@
 
 int main()
 {
-    double a = 0, b = 0, i = 0;
+    double a = 0, b = 0;
+        int i = 0;
     printf("Enter the amount of rubles - ");
     scanf_s("%f", &a);
     printf("Enter the amount of rubles you want to receive - ");
