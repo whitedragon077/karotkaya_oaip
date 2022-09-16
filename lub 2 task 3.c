@@ -1,7 +1,7 @@
 #include <stdio.h> 
 int main()
 {
-    int a=0, b = 0, c=0, d = 0;
+    int a=0, b = 0, c=0;
     printf("Enter numbers N and K - ");
     scanf_s("%d", &a);
     scanf_s("%d", &b);
@@ -10,8 +10,7 @@ int main()
         a -= b;
         c += 1;
     }
-    d = a;
     printf("Quotient of division = %d\n", c);
-    printf("Remainder of division = %d", d);
+    printf("Remainder of division = %d", a);
     return 0;
 }
