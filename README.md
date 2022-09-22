@@ -1,1 +1,0 @@
-# karotkaya_oaip
