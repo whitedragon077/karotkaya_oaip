@@ -1,0 +1,5 @@
+﻿  Source.c
+C:\Users\Jellyfish\Desktop\labs\lab number 1\Task 2\Source.c(19,6): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Jellyfish\Desktop\labs\lab number 1\Task 2\Source.c(21,41): warning C4474: 'printf' : too many arguments passed for format string
+C:\Users\Jellyfish\Desktop\labs\lab number 1\Task 2\Source.c(21,41): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  Task 2.vcxproj -> C:\Users\Jellyfish\Desktop\labs\lab number 1\Task 2\x64\Debug\Task 2.exe
