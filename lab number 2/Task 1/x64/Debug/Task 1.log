@@ -1,0 +1,6 @@
+﻿  Source.c
+C:\Users\Jellyfish\Desktop\labs\lab number 2\Task 1\Source.c(9,13): warning C4477: 'scanf_s' : format string '%f' requires an argument of type 'float *', but variadic argument 1 has type 'double *'
+C:\Users\Jellyfish\Desktop\labs\lab number 2\Task 1\Source.c(9,13): message : consider using '%lf' in the format string
+C:\Users\Jellyfish\Desktop\labs\lab number 2\Task 1\Source.c(11,13): warning C4477: 'scanf_s' : format string '%f' requires an argument of type 'float *', but variadic argument 1 has type 'double *'
+C:\Users\Jellyfish\Desktop\labs\lab number 2\Task 1\Source.c(11,13): message : consider using '%lf' in the format string
+  Task 1.vcxproj -> C:\Users\Jellyfish\Desktop\labs\lab number 2\Task 1\x64\Debug\Task 1.exe
