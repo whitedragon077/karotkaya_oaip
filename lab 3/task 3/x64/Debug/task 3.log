@@ -1,0 +1,6 @@
+﻿  Source.c
+C:\Programy\lab 3\task 3\Source.c(62,2): warning C4013: 'srand' undefined; assuming extern returning int
+C:\Programy\lab 3\task 3\Source.c(62,8): warning C4013: 'time' undefined; assuming extern returning int
+C:\Programy\lab 3\task 3\Source.c(65,12): warning C4013: 'rand' undefined; assuming extern returning int
+C:\Programy\lab 3\task 3\Source.c(58): warning C4716: 'elements_input_check': must return a value
+  task 3.vcxproj -> C:\Programy\lab 3\task 3\x64\Debug\task 3.exe
