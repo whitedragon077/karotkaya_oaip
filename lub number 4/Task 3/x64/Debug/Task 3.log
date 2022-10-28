@@ -1,0 +1,4 @@
+﻿  Source.c
+C:\Programy\lub number 4\Task 3\Source.c(77,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Programy\lub number 4\Task 3\Source.c(45): warning C4716: 'input_check': must return a value
+  Task 3.vcxproj -> C:\Programy\lub number 4\Task 3\x64\Debug\Task 3.exe

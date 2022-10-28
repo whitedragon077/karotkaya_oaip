@@ -1,0 +1,4 @@
+﻿  Source.c
+C:\Programy\lub number 4\task 2\Source.c(94,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Programy\lub number 4\task 2\Source.c(72): warning C4716: 'amount_rows_cols': must return a value
+  Task 2.vcxproj -> C:\Programy\lub number 4\task 2\x64\Debug\Task 2.exe
