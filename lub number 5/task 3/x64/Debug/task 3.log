@@ -1,0 +1,7 @@
+﻿  array.c
+C:\Programy\lub number 5\task 3\array.c(29,64): warning C4047: '=': 'int *' differs in levels of indirection from 'int **'
+  input.c
+  main.c
+  output.c
+  Generating Code...
+  task 3.vcxproj -> C:\Programy\lub number 5\task 3\x64\Debug\task 3.exe
