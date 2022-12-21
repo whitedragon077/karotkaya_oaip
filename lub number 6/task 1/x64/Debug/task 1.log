@@ -1,0 +1,9 @@
+﻿  input_output.c
+C:\Programy\lub number 6\task 1\input_output.c(5,2): warning C4013: 'printf' undefined; assuming extern returning int
+C:\Programy\lub number 6\task 1\input_output.c(6,9): warning C4013: 'scanf_s' undefined; assuming extern returning int
+C:\Programy\lub number 6\task 1\input_output.c(6,50): warning C4013: 'getchar' undefined; assuming extern returning int
+C:\Programy\lub number 6\task 1\input_output.c(9,3): warning C4013: 'rewind' undefined; assuming extern returning int
+C:\Programy\lub number 6\task 1\input_output.c(9,15): error C2065: 'stdin': undeclared identifier
+C:\Programy\lub number 6\task 1\input_output.c(20,16): error C2065: 'stdin': undeclared identifier
+  main.c
+  Generating Code...
