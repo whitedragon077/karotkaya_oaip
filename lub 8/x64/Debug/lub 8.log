@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Programy\lub number 7\lub 8\main.c(14,29): warning C4047: 'function': 'char **' differs in levels of indirection from 'char *'
+C:\Programy\lub number 7\lub 8\main.c(14,26): warning C4024: 'input_string': different types for formal and actual parameter 1
+  lub 8.vcxproj -> C:\Programy\lub number 7\lub 8\x64\Debug\lub 8.exe
