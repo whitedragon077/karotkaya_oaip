@@ -1,0 +1,7 @@
+﻿  main.c
+C:\Programy\lub number 7\lub 7\main.c(15,16): warning C4113: 'int (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+C:\Programy\lub number 7\lub 7\main.c(19,16): warning C4113: 'int (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
+  tasks.c
+  Generating Code...
+C:\Programy\lub number 7\lub 7\tasks.c(18): warning C4716: 'task1': must return a value
+  lub 7.vcxproj -> C:\Programy\lub number 7\lub 7\x64\Debug\lub 7.exe
