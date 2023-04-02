@@ -1,0 +1,9 @@
+﻿  functions.c
+C:\Programy\iuuuiuiui\номер номер\lub 1\functions.c(26,26): warning C4013: 'checkinput' undefined; assuming extern returning int
+C:\Programy\iuuuiuiui\номер номер\lub 1\functions.c(34,12): warning C4473: 'printf_s' : not enough arguments passed for format string
+C:\Programy\iuuuiuiui\номер номер\lub 1\functions.c(34,12): message : placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+C:\Programy\iuuuiuiui\номер номер\lub 1\functions.c(34,12): message : the missing variadic argument 1 is required by format string '%s'
+C:\Programy\iuuuiuiui\номер номер\lub 1\functions.c(43,26): warning C4474: 'printf_s' : too many arguments passed for format string
+C:\Programy\iuuuiuiui\номер номер\lub 1\functions.c(43,26): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Programy\iuuuiuiui\номер номер\lub 1\functions.c(89): warning C4715: 'compare': not all control paths return a value
+  lub 1.vcxproj -> C:\Programy\iuuuiuiui\номер номер\lub 1\x64\Debug\lub 1.exe
