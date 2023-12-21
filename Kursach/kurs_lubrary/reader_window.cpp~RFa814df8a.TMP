@@ -1,0 +1,142 @@
+#include "reader_window.h"
+#include "ui_reader_window.h"
+
+reader_window::reader_window(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::reader_window)
+{
+    ui->setupUi(this);
+}
+
+reader_window::~reader_window()
+{
+    delete ui;
+}
+
+void reader_window::on_addreader_clicked()
+{
+bool cancel;
+    QString name = QInputDialog::getText(this, "Введите имя читателя", "Имя:", QLineEdit::Normal, "", &cancel);
+
+    if (cancel) {
+        QString lastName = QInputDialog::getText(this, "Введите фамилию читателя", "Фамилия:", QLineEdit::Normal, "", &cancel);
+
+        if (cancel) {
+            QString secondName = QInputDialog::getText(this, "Введите отчество читателя", "Отчество:", QLineEdit::Normal, "", &cancel);
+
+            if (cancel) {
+                QString address = QInputDialog::getText(this, "Введите адрес читателя", "Адрес:", QLineEdit::Normal, "", &cancel);
+
+                if (cancel) {
+                    int teleNumber = QInputDialog::getInt(this, "Введите номер телефона читателя", "Номер телефона:", 0, 0, INT_MAX, 1, &cancel);
+
+                    if (cancel) {
+                        QString passportNumber = QInputDialog::getText(this, "Введите номер паспорта читателя", "Номер паспорта:", QLineEdit::Normal, "", &cancel);
+
+                        if (cancel) {
+                            ReaderList* reader = new ReaderList;
+                            reader->setName(name);
+                            reader->setLastName(lastName);
+                            reader->setSecondName(secondName);
+                            reader->setAdress(address);
+                            reader->setTeleNumber(teleNumber);
+                            reader->setPasportNumber(passportNumber);
+
+
+                            readers.push_back(reader);
+
+
+                            QListWidgetItem* item = new QListWidgetItem;
+                            item->setText(reader->getName());
+                            item->setData(Qt::UserRole, QVariant::fromValue<ReaderList*>(reader));
+                            ui->readerlist->addItem(item);
+
+
+                            QString filePath = "D:/KURSOVOI/library/files/readers.txt";
+                            saveReaderDataToFile(filePath);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+void reader_window::on_deletereader_clicked()
+{
+
+        QListWidgetItem* selectedItem = ui->readerlist->currentItem();
+        if (selectedItem != nullptr) {
+        int index = ui->readerlist->row(selectedItem);
+            ReaderList* reader = readers[index];
+
+            QString filePath = "D:/KURSOVOI/library/files/readers.txt";
+            removeLineFromFile(filePath, index + 1);
+
+            delete reader;
+            ui->readerparam->clear();
+            readers.erase(readers.begin() + index);
+            delete selectedItem;
+
+            for (int i = index; i < ui->readerlist->count(); ++i) {
+                QListWidgetItem* item = ui->readerlist->item(i);
+                if (item != nullptr) {
+                    Book* updatedBook = item->data(Qt::UserRole).value<Book*>();
+                    QString updatedText = QString::number(i + 1) + ". " + updatedBook->getName();
+                    item->setText(updatedText);
+
+                    delete updatedBook;
+                }
+            }
+        }
+
+}
+
+
+
+void reader_window::on_searchReader_textChanged(const QString &text)
+{
+
+        ui->readerlist->clear();
+
+            if (text.isEmpty()) {
+            for (ReaderList* reader : readers) {
+                QListWidgetItem* item = new QListWidgetItem;
+                item->setText(reader->getName());
+                item->setData(Qt::UserRole, QVariant::fromValue<ReaderList*>(reader));
+                ui->readerlist->addItem(item);
+            }
+        } else {
+            for (ReaderList* reader : readers) {
+                if (reader->getName().contains(text, Qt::CaseInsensitive)) {
+                    QListWidgetItem* item = new QListWidgetItem;
+                    item->setText(reader->getName());
+                    item->setData(Qt::UserRole, QVariant::fromValue<ReaderList*>(reader));
+                    ui->readerlist->addItem(item);
+                }
+            }
+        }
+}
+
+void reader_window::saveReaderDataToFile(const QString& filePath)
+{
+        QFile file(filePath);
+
+            if (file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+            QTextStream out(&file);
+
+            for (const auto& reader : readers)
+            {
+                out << reader->getName() << ";";
+                out << reader->getAdress() << ";";
+                out << reader->getTeleNumber() << ";";
+                out << reader->getPasportNumber() << "\n";
+            }
+
+            file.close();
+        }
+}
+

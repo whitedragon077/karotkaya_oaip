@@ -1,0 +1,25 @@
+#ifndef READER_WINDOW_H
+#define READER_WINDOW_H
+
+#include <QDialog>
+
+namespace Ui {
+class reader_window;
+}
+
+class reader_window : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit reader_window(QWidget *parent = nullptr);
+    ~reader_window();
+
+signals:
+    void readerOpen();
+
+private:
+    Ui::reader_window *ui;
+};
+
+#endif // READER_WINDOW_H

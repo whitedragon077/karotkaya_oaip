@@ -1,0 +1,12 @@
+release/book.o
+release/comic.o
+release/main.o
+release/mainwindow.o
+release/multimedia.o
+release/reader_window.o
+release/readerlist.o
+release/resourse.o
+release/resourse_window.o
+release/moc_mainwindow.o
+release/moc_reader_window.o
+release/moc_resourse_window.o

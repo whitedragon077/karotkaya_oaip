@@ -1,0 +1,12 @@
+debug/book.o
+debug/comic.o
+debug/main.o
+debug/mainwindow.o
+debug/multimedia.o
+debug/reader_window.o
+debug/readerlist.o
+debug/resourse.o
+debug/resourse_window.o
+debug/moc_mainwindow.o
+debug/moc_reader_window.o
+debug/moc_resourse_window.o
